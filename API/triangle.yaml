@@ -1,0 +1,65 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+servers:
+# Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/undeadgrishnackh74/3thAngle/1.0.0
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/undeadgrishnackh74/mathPortal/geometry/triangle/1.0.0
+info:
+  description: API to calculate the 3th angle of a triangle
+  version: "1.0.0"
+  title: triangle 3th angle calculator
+  contact:
+    email: undeadgrishnackh@gmail.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: admins
+    description: Secured Admin-only calls
+  - name: developers
+    description: Operations available to regular developers
+paths:
+  /3thAngle:
+    post:
+      tags:
+        - admins
+      summary: get the 3th angle
+      operationId: 3thAngle
+      description: Return the 3th angle
+      responses:
+        '200':
+          description: A list of users
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Triangle3thAngle'
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TriangleAngles'
+        description: Traingle Angles
+components:
+  schemas:
+    TriangleAngles:
+      type: object
+      required:
+        - alpha
+        - beta
+      properties:
+        alpha:
+          type: number
+          example: 90
+        beta:
+          type: number
+          example: 45
+    Triangle3thAngle:
+      type: object
+      properties:
+        delta:
+          type: number
+          example: 45
