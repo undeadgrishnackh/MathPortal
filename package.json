@@ -15,7 +15,7 @@
     "src"
   ],
   "scripts": {
-    "test": "npm run test-cucumber || npm run test-jest",
+    "test": "npm run test-cucumber && npm run test-jest",
     "test-cucumber": "./node_modules/.bin/cucumber-js",
     "test-jest": "jest",
     "test:debug": "jest --watchAll",
