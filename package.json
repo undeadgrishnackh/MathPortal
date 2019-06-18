@@ -15,7 +15,9 @@
     "src"
   ],
   "scripts": {
-    "test": "jest",
+    "test": "npm run test-cucumber || npm run test-jest",
+    "test-cucumber": "./node_modules/.bin/cucumber-js",
+    "test-jest": "jest",
     "test:debug": "jest --watchAll",
     "coverage": "npm test -- --coverage",
     "postcoverage": "opn coverage/lcov-report/index.html",
@@ -30,7 +32,7 @@
     "preversion": "npm run lint && npm test && npm run build",
     "version": "standard-changelog && git add CHANGELOG.md",
     "postpublish": "git push origin master --follow-tags",
-    "cucumber": "./node_modules/.bin/cucumber-js"
+    "codecov": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec . / node_modules / .bin / codecov "
   },
   "husky": {
     "hooks": {
@@ -46,8 +48,7 @@
   "keywords": [
     "boilerplate-nodejs"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
@@ -58,6 +59,7 @@
     "babel-eslint": "^10.0.2",
     "babel-jest": "^23.6.0",
     "chai": "^4.2.0",
+    "codecov": "^3.5.0",
     "cucumber": "^5.1.0",
     "diff": ">=3.5.0",
     "documentation": "^9.3.1",
@@ -71,14 +73,13 @@
     "flow-bin": "^0.83.0",
     "flow-copy-source": "^2.0.6",
     "husky": "^1.1.2",
+    "istanbul": "^0.4.5",
     "jest-cli": "^23.6.0",
     "lint-staged": "^7.3.0",
+    "mocha": "^6.1.4",
     "opn-cli": "^3.1.0",
     "prettier": "^1.18.2",
     "rimraf": "^2.6.2",
-    "standard-changelog": "^2.0.11",
-    "codecov": "^3.5.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^6.1.4"
+    "standard-changelog": "^2.0.11"
   }
 }

@@ -2,10 +2,8 @@ language: node_js
 node_js:
   - "7"
 cache: npm
-"scripts": {
-  "test": "npm run cucumber",
-  "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codecov"
-}
+script:
+- npm run codecov
 deploy:
   - provider: pages
     skip_cleanup: true
