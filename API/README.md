@@ -1,0 +1,1 @@
+https://app.swaggerhub.com/apis/undeadgrishnackh74/3thAngle/1.0.0
