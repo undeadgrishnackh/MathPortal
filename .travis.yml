@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "7"
 before_install:
-  - npm i -g npm@version-number
+  - npm i -g 6.9.0
 cache: npm
 "scripts": {
   "test": "npm run cucumber",
