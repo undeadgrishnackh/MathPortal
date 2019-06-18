@@ -1,11 +1,12 @@
 language: node_js
 node_js:
-  - "10"
+  - "7"
 before_install:
   - npm i -g npm@version-number
 cache: npm
 "scripts": {
-  "test": "npm run cucumber"
+  "test": "npm run cucumber",
+  "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codecov"
 }
 deploy:
   - provider: pages
