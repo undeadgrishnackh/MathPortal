@@ -32,7 +32,7 @@
     "preversion": "npm run lint && npm test && npm run build",
     "version": "standard-changelog && git add CHANGELOG.md",
     "postpublish": "git push origin master --follow-tags",
-    "codecov": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec . / node_modules / .bin / codecov "
+    "codecov": "node_modules/codecov/bin/codecov"
   },
   "husky": {
     "hooks": {
