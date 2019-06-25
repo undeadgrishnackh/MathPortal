@@ -1,12 +1,18 @@
 var express = require('express');
-var app = express();
+const { calculate3thAngle } = require('../src/triangleCalculator');
+var bodyParser = require('body-parser');
+
 var PORT = 8888;
 
-// /api/MathPortal/triangle/3thAngle/1.0.0
-// /api/v1/todos
+var app = express();
+
+app.use(bodyParser.json()); 
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.post('/api/MathPortal/triangle/3thAngle/1.0.0', (req, res) => {
+  let result = calculate3thAngle(req.body.alpha, req.body.beta);
   res.status(200).send({
-    delta: 'FAKE_MOCK_TO_CHECK_THE_NEWMAN_TEST'
+    delta: result
   });
 });
 
