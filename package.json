@@ -79,8 +79,11 @@
     "jest-cli": "^23.6.0",
     "lint-staged": "^7.3.0",
     "mocha": "^6.1.4",
+    "nock": "^10.0.6",
     "opn-cli": "^3.1.0",
     "prettier": "^1.18.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
     "rimraf": "^2.6.2",
     "standard-changelog": "^2.0.11"
   }
