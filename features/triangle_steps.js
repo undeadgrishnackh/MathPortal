@@ -1,6 +1,5 @@
 // features/support/steps.js
 const { Given, When, Then } = require('cucumber');
-// const { expect } = require("chai");
 
 Given('a triangle without any angle', function () {
   return 'pending';
