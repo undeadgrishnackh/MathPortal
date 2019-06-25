@@ -27,11 +27,11 @@
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});",
+							"",
 							"pm.test(\"Check the JSON result contains: delta is 90 degrees\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.delta).to.eql(90);",
-							"});",
-							""
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -55,16 +55,18 @@
 					"raw": "{\n    \"alpha\": \"45\",\n    \"beta\": \"45\"\n}"
 				},
 				"url": {
-					"raw": "https://3430f7e3-81dd-4eec-a809-c13528f03bf9.mock.pstmn.io/3thAngle",
-					"protocol": "https",
+					"raw": "http://localhost:8888/api/MathPortal/triangle/3thAngle/1.0.0",
+					"protocol": "http",
 					"host": [
-						"3430f7e3-81dd-4eec-a809-c13528f03bf9",
-						"mock",
-						"pstmn",
-						"io"
+						"localhost"
 					],
+					"port": "8888",
 					"path": [
-						"3thAngle"
+						"api",
+						"MathPortal",
+						"triangle",
+						"3thAngle",
+						"1.0.0"
 					]
 				},
 				"description": "Return the 3th angle"

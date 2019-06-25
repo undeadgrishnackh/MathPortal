@@ -1,10 +1,8 @@
 {
-  "name": "boilerplate-nodejs",
+  "name": "MathPortal_E2E_BDD",
   "version": "0.0.1",
-  "description": "An awesome boilerplate to start with",
+  "description": "The Cucumber E2E and BDD test driver.",
   "license": "MIT",
-  "repository": "/boilerplate-nodejs",
-  "main": "dist/index.js",
   "author": {
     "name": "UndeadGrishnackh",
     "email": "undeadgrishnackh@gmail.com",
@@ -15,9 +13,10 @@
     "src"
   ],
   "scripts": {
-    "test": "npm run test-cucumber && npm run test-jest",
+    "test": "npm run test-API && npm run test-jest && npm run test-cucumber",
     "test-cucumber": "./node_modules/.bin/cucumber-js",
     "test-jest": "jest",
+    "test-API": "newman run API/test/IT_triangle_3thAngleCalculator.postman_collection.json",
     "test:debug": "jest --watchAll",
     "coverage": "npm test -- --coverage",
     "postcoverage": "opn coverage/lcov-report/index.html",
@@ -48,7 +47,9 @@
   "keywords": [
     "boilerplate-nodejs"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
