@@ -5,4 +5,4 @@ cache: npm
 install:
   - npm install newman
 script:
-  - node_modules/.bin/newman run newman run API/test/IT_triangle_3thAngleCalculator.postman_collection.json
+  - ./node_modules/.bin/newman run newman run API/test/IT_triangle_3thAngleCalculator.postman_collection.json
