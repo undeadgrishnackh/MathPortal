@@ -13,7 +13,7 @@
     "src"
   ],
   "scripts": {
-    "test": "npm run test-API && npm run test-jest && npm run test-cucumber",
+    "test": "npm run test-jest",
     "test-cucumber": "./node_modules/.bin/cucumber-js",
     "test-jest": "jest",
     "test-API": "newman run API/test/IT_triangle_3thAngleCalculator.postman_collection.json",
