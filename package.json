@@ -9,6 +9,7 @@
     "email": "undeadgrishnackh@gmail.com",
     "url": "https://github.com/"
   },
+  "engines": {"node": "7"},
   "files": [
     "dist",
     "src"
