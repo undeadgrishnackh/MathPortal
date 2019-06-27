@@ -15,6 +15,7 @@
     "src"
   ],
   "scripts": {
+    "start": "node src/triangleAPI.js",
     "test": "npm run test-jest",
     "test-cucumber": "./node_modules/.bin/cucumber-js",
     "test-jest": "jest",
@@ -33,7 +34,9 @@
     "preversion": "npm run lint && npm test && npm run build",
     "version": "standard-changelog && git add CHANGELOG.md",
     "postpublish": "git push origin master --follow-tags",
-    "codecov": "node_modules/codecov/bin/codecov"
+    "codecov": "node_modules/codecov/bin/codecov",
+    "docker_build": "docker build -t undeadgrishnackh/math_portal .",
+    "docker_run": "docker run -p 8888:8888 -d undeadgrishnackh/math_portal"
   },
   "husky": {
     "hooks": {
