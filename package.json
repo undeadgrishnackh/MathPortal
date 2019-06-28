@@ -20,6 +20,7 @@
     "test-cucumber": "./node_modules/.bin/cucumber-js",
     "test-jest": "jest",
     "test-API": "newman run API/test/IT_triangle_3thAngleCalculator.postman_collection.json",
+    "test-local": "npm run docker_stop || npm test && npm run docker_build && npm run docker_run && npm run test-API && npm run test-cucumber",
     "test:debug": "jest --watchAll",
     "coverage": "npm test -- --coverage",
     "postcoverage": "opn coverage/lcov-report/index.html",
@@ -36,7 +37,8 @@
     "postpublish": "git push origin master --follow-tags",
     "codecov": "node_modules/codecov/bin/codecov",
     "docker_build": "docker build -t undeadgrishnackh/math_portal .",
-    "docker_run": "docker run -p 8888:8888 -d undeadgrishnackh/math_portal"
+    "docker_run": "docker run -p 8888:8888 -d undeadgrishnackh/math_portal",
+    "docker_stop": "docker stop `docker ps | grep -i undeadgrishnackh/math_portal | awk '{print $1}'`"
   },
   "husky": {
     "hooks": {
