@@ -1,5 +1,5 @@
 {
-  "name": "MathPortal_E2E_BDD",
+  "name": "math_portal_bdd",
   "version": "0.0.1",
   "description": "The Cucumber E2E and BDD test driver.",
   "main": "src/triangleAPI.js",
