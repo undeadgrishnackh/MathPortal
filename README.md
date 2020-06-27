@@ -2,7 +2,9 @@
 
 [![Generated with nod](https://img.shields.io/badge/generator-nod-2196F3.svg?style=flat-square)](https://github.com/diegohaz/nod)
 [![NPM version](https://img.shields.io/npm/v/boilerplate-nodejs.svg?style=flat-square)](https://npmjs.org/package/boilerplate-nodejs)
-[![Build Status](https://travis-ci.org/undeadgrishnackh/MathPortal.svg?branch=master)](https://travis-ci.org/undeadgrishnackh/MathPortal) [![Coverage Status](https://codecov.io/gh/undeadgrishnackh/MathPortal/branch/master/graphs/badge.svg?)](https://codecov.io/gh/undeadgrishnackh/MathPortal/branch/master)
+[![Build Status](https://travis-ci.org/undeadgrishnackh/MathPortal.svg?branch=master)](https://travis-ci.org/undeadgrishnackh/MathPortal) 
+[![Coverage Status](https://codecov.io/gh/undeadgrishnackh/MathPortal/branch/master/graphs/badge.svg?)](https://codecov.io/gh/undeadgrishnackh/MathPortal/branch/master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=undeadgrishnackh_CarParkEscape&metric=alert_status)](https://sonarcloud.io/dashboard?id=undeadgrishnackh_CarParkEscape)
 
 ### Training Kata
 
