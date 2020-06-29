@@ -1,7 +1,7 @@
 # Math Portal
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/987faff4c687472a81483c6e015b38b5)](https://www.codacy.com/manual/undeadgrishnackh/MathPortal?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=undeadgrishnackh/MathPortal&amp;utm_campaign=Badge_Grade)
 [![BCH compliance](https://bettercodehub.com/edge/badge/undeadgrishnackh/MathPortal?branch=master)](https://bettercodehub.com/)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=undeadgrishnackh_CarParkEscape&metric=alert_status)](https://sonarcloud.io/dashboard?id=undeadgrishnackh_CarParkEscape)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=undeadgrishnackh_MathPortal&metric=alert_status)](https://sonarcloud.io/dashboard?id=undeadgrishnackh_MathPortal)
 
 ### Training Kata
 
