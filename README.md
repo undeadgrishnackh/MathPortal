@@ -1,5 +1,6 @@
 # Math Portal
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c652ade0612a4a84badb7b9e2e0ef405)](https://app.codacy.com/manual/undeadgrishnackh/MathPortal?utm_source=github.com&utm_medium=referral&utm_content=undeadgrishnackh/MathPortal&utm_campaign=Badge_Grade_Settings)
 [![Generated with nod](https://img.shields.io/badge/generator-nod-2196F3.svg?style=flat-square)](https://github.com/diegohaz/nod)
 [![NPM version](https://img.shields.io/npm/v/boilerplate-nodejs.svg?style=flat-square)](https://npmjs.org/package/boilerplate-nodejs)
 [![Build Status](https://travis-ci.org/undeadgrishnackh/MathPortal.svg?branch=master)](https://travis-ci.org/undeadgrishnackh/MathPortal) 
