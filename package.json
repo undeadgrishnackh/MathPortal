@@ -92,6 +92,7 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "rimraf": "^2.6.2",
-    "standard-changelog": "^2.0.11"
+    "standard-changelog": "^2.0.11",
+    "merge": ">=2.1.1"
   }
 }
